@@ -8,5 +8,5 @@ class SystemInfo:
     @staticmethod
     def get_time():
         now = datetime.datetime.now()
-        answer = 'The time now is {} {}'.format(now.hour, now.minute)
+        answer = 'The time is {} {}'.format(now.hour%12, now.minute)
         return answer
